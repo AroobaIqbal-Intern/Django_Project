@@ -1,0 +1,64 @@
+from django.shortcuts import render,HttpResponse
+from datetime import datetime
+from home.models import Contact
+from django.contrib import messages
+from django.shortcuts import render, get_object_or_404, redirect
+from .models import Product
+
+
+# Create your views here.
+
+def index(request):
+   # return HttpResponse("This is homepage")
+   #context is set of variables(dictionary) that you will send into template
+   context={
+       #we will fetch the data from databae or fetch date of blof etc here to give it to template
+       'variable':"value of my first variable",     #this variable is called in index.html template
+       'variable2':"value of my second variable"
+   }
+   return render(request,'index.html',context)
+
+
+def about(request):
+    #return HttpResponse("This is about")
+     return render(request,'about.html')
+
+def services(request):
+    #return HttpResponse("This is service")
+    return render(request,'services.html')
+
+def contact(request):
+    #return HttpResponse("This is contact")
+    if request.method=='POST':
+    #it means that if anyone pot form then it will run only otherwise not.
+       name=request.POST.get('name')
+       email=request.POST.get('email')
+       phone=request.POST.get('phone')
+       contact=Contact(name=name , email=email ,phone=phone , date=datetime.today())
+       contact.save()
+       messages.success(request, "Your messsage has been sent!") #for displaying  this message go in base.html after navbar.This command is from website https://docs.djangoproject.com/en/5.2/ref/contrib/messages/
+    return render(request,'contact.html')
+
+
+def ice_cream_view(request):
+    items = Product.objects.filter(category='ice-cream')
+    return render(request, 'services_list.html', {'items': items, 'title': 'Ice Cream'})
+
+def softy_view(request):
+    items = Product.objects.filter(category='softy')
+    return render(request, 'services_list.html', {'items': items, 'title': 'Softy'})
+
+def family_pack_view(request):
+    items = Product.objects.filter(category='family-pack')
+    return render(request, 'services_list.html', {'items': items, 'title': 'Family Pack'})
+
+# Optional: Add to Cart (Simple Session-Based)
+def add_to_cart(request, product_id):
+    product = get_object_or_404(Product, id=product_id)
+    cart = request.session.get('cart', {})
+    cart[str(product_id)] = cart.get(str(product_id), 0) + 1
+    request.session['cart'] = cart
+    return redirect(request.META.get('HTTP_REFERER', '/'))
+
+
+

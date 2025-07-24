@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Home
+{% endblock title %}
+
+{% block body %}
+  <style>
+    /* Custom styles for individual images */
+    .img-1 {
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .img-2 {
+      height: 500px;
+      object-fit: contain;
+    }
+
+    .img-3 {
+      height: 300px;
+      object-fit: fill;
+    }
+
+    /* Optional: enhance caption readability */
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .carousel-caption h5, .carousel-caption p {
+      color: #fff;
+    }
+
+    /* Allow each slide to control height */
+    .carousel-inner {
+      height: auto;
+    }
+  </style>
+
+  <div class="container my-4">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/static/img/1i.jpg" class="d-block w-100 img-1" alt="...">
+          <div class="carousel-caption d-block">
+            <h5>Strawberry Bliss</h5>
+            <p>Fresh and fruity delight</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="/static/img/2i.jpg" class="d-block w-100 img-2" alt="...">
+          <div class="carousel-caption d-block">
+            <h5>Chocolate Dream</h5>
+            <p>Rich and creamy indulgence</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="/static/img/3i.png" class="d-block w-100 img-3" alt="...">
+          <div class="carousel-caption d-block">
+            <h5>Classic Vanilla</h5>
+            <p>Timeless taste for every mood</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+<!--Thumbnail example from bootstrap i right clicked it then selected insspected and where it container starts right click and select edit in html 
+then copy and past the code here-->
+
+<div class="container"> 
+  <h1 class="my-4 text-center">Select from our range of Ice creams</h1>
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    
+    <!-- Card 1 -->
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/img/3i.png" class="bd-placeholder-img card-img-top" height="225" style="object-fit: cover;" alt="Ice Cream 1">
+        <div class="card-body">
+          <p class="card-text">Delicious vanilla ice cream with crunchy sprinkles.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+            </div>
+            <small class="text-body-secondary">5 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/img/2i.jpg" class="bd-placeholder-img card-img-top" height="225" style="object-fit: cover;" alt="Ice Cream 2">
+        <div class="card-body">
+          <p class="card-text">Strawberry blast with creamy texture and fresh fruit.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+            </div>
+            <small class="text-body-secondary">10 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/img/1i.jpg" class="bd-placeholder-img card-img-top" height="225" style="object-fit: cover;" alt="Ice Cream 3">
+        <div class="card-body">
+          <p class="card-text">Rich chocolate scoop with caramel drizzle.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+            </div>
+            <small class="text-body-secondary">8 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeat similar blocks for more cards -->
+    
+  </div>
+</div>
+{% endblock body %}

@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Contact Us
+{% endblock title %}
+
+
+{% block body %}
+<style>
+  .img-heading {
+    position: absolute;
+    top: 250px;
+    right: 350px; /* Move right by decreasing this value */
+    font-size: 4rem; /* Bigger font size */
+    color: rgb(174, 197, 97);    /* Optional: better visibility on image */
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Optional for better contrast */
+  }
+</style>
+
+<div class="container position-relative ">
+   <img src="/static/img/4i.webp" class="bd-placeholder-img card-img-top" height="225" style="object-fit: cover;" alt="Ice Cream 1">
+
+  <h1 class="img-heading">CONTACT US</h1>  <!--you can also add <h1 class="top-center"> --> 
+
+<!--Added Form here from bootstrap-->
+<form style="margin-top: 100px;" method="post" action="/contact" >
+    {% csrf_token %} <!--This will be added so that it may be assured that form must be submitted through our website not by hackers-->
+  <div class="mb-3" >
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="email1"  name= "email" aria-describedby="emailHelp"> <!--I have added names in all thi like name="Email because Django will identify the user in data base by it."-->
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputname" class="form-label">Name</label>
+    <input type="name" class="form-control" id="name1"  name= "name">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="Password1"  name= "password">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPhone" class="form-label">Phone Number</label>
+    <input type="Phone number" class="form-control" id="Phone1"  name= "phone">
+  </div>
+  <div class="mb-5 form-check">
+    <input type="checkbox" class="form-check-input" id="Check1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+    
+
+</div>
+{% endblock body %}
+

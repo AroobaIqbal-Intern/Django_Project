@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}About Us{% endblock title %}
+
+{% block body %}
+<section class="bg-light py-5">
+    <div class="container">
+        <h1 class="text-center mb-4 fw-bold">About Arooba Ice-Creams</h1>
+        <p class="lead text-center mb-5">
+            Serving smiles in every scoop — premium handcrafted ice cream made with love, since [Your Year].
+        </p>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <img src="/static/img/2i.jpg" alt="Ice Cream Shop" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h3>Our Journey</h3>
+                <p>
+                    Arooba Ice-Creams began with a dream — to create more than just desserts, but unforgettable experiences. We use only the finest natural ingredients, sourced locally where possible, and handcraft our ice creams in small batches to maintain their premium quality.
+                </p>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5 flex-md-row-reverse">
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1612197571193-94be6d98e16c" alt="Ice Cream Making" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h3>Why Choose Us?</h3>
+                <ul class="list-unstyled">
+                    <li>🍨 100% natural ingredients — no artificial flavors</li>
+                    <li>🌱 Eco-conscious packaging and sustainable practices</li>
+                    <li>🎨 Creative seasonal flavors and classic favorites</li>
+                    <li>👨‍👩‍👧 Warm, welcoming environment for all ages</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col">
+                <h3>Join Our Sweet Journey</h3>
+                <p>
+                    Whether you're enjoying a cone at our store or ordering online, we’re committed to making your moments memorable — one scoop at a time.
+                </p>
+                <a href="/contact" class="btn btn-primary mt-3">Get in Touch</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock body %}
