@@ -23,21 +23,19 @@
         <li class="nav-item">
           <a class="nav-link" href="/about">About Us</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="/services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Services
-          </a>
-         <li class="nav-item dropdown">
+        
+       <li class="nav-item dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Services
   </a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/icecreams/">Ice-Creams</a></li>
-    <li><a class="dropdown-item" href="/softy/">Softy</a></li>
+    <li><a class="dropdown-item" href="{% url 'ice_cream' %}">Ice-Creams</a></li>
+    <li><a class="dropdown-item" href="{% url 'softy' %}">Softy</a></li>
     <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="/familypack/">Family Pack</a></li>
+    <li><a class="dropdown-item" href="{% url 'family_pack' %}">Family Pack</a></li>
   </ul>
 </li>
+
 
         </li>
         <li class="nav-item">
