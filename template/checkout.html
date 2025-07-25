@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Checkout{% endblock %}
+{% block body %}
+<div class="container mt-4">
+  <h2>Checkout</h2>
+  <form method="post">
+    {% csrf_token %}
+    <p>Are you sure you want to place the order?</p>
+    <button type="submit" class="btn btn-success">Place Order</button>
+    <a href="{% url 'cart' %}" class="btn btn-secondary">Go Back</a>
+  </form>
+</div>
+{% endblock %}

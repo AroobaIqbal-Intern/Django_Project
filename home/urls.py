@@ -13,6 +13,9 @@ urlpatterns = [
     path('services/family-pack/', views.family_pack_view, name='family_pack'),
 
     # Cart URL (optional)
-    path('add-to-cart/<int:product_id>/', views.add_to_cart, name='add_to_cart'),
-     path('signup/', views.signup_view, name='signup'),
+    path('signup/', views.signup_view, name='signup'),
+    path('add-to-cart/<int:item_id>/', views.add_to_cart, name='add_to_cart'),
+    path('cart/', views.cart_view, name='cart'),
+    path('checkout/', views.checkout_view, name='checkout'),
+    path('order-placed/', views.order_placed_view, name='order_placed'),
 ]

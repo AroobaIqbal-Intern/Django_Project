@@ -8,6 +8,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
+from .models import Product
 
 
 # Create your views here.
@@ -62,7 +63,8 @@ def add_to_cart(request, product_id):
     cart = request.session.get('cart', {})
     cart[str(product_id)] = cart.get(str(product_id), 0) + 1
     request.session['cart'] = cart
-    return redirect(request.META.get('HTTP_REFERER', '/'))
+    #return redirect(request.META.get('HTTP_REFERER', '/'))
+    return redirect('view_cart') 
 
 
 
@@ -85,3 +87,37 @@ def signup_view(request):
 @login_required
 def services(request):
     return render(request, 'services.html')
+
+
+
+def add_to_cart(request, item_id):
+    cart = request.session.get('cart', {})
+    cart[item_id] = cart.get(item_id, 0) + 1  # Increment quantity
+    request.session['cart'] = cart
+    messages.success(request, 'Item added to cart.')
+    return redirect('cart')
+
+def cart_view(request):
+    cart = request.session.get('cart', {})
+    cart_items = []
+    total_price = 0
+    for item_id, quantity in cart.items():
+        product = get_object_or_404(Product, pk=item_id)
+        total = product.price * quantity
+        cart_items.append({'product': product, 'quantity': quantity, 'total': total})
+        total_price += total
+
+    return render(request, 'cart.html', {
+        'cart_items': cart_items,
+        'total_price': total_price,
+    })
+
+def checkout_view(request):
+    if request.method == 'POST':
+        request.session['cart'] = {}  # Clear cart after checkout
+        messages.success(request, 'Order placed successfully!')
+        return redirect('order_placed')
+    return render(request, 'checkout.html')
+
+def order_placed_view(request):
+    return render(request, 'order_placed.html')
