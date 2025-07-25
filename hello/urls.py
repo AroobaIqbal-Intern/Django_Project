@@ -27,6 +27,7 @@ admin.site.index_title = "Welcome to Arooba Ice Creams"
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('home.urls')),
+    path('accounts/', include('accounts.urls')),
     
 ]
 

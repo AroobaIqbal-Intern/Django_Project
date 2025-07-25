@@ -35,6 +35,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'accounts',
     'home.apps.HomeConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -94,6 +95,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
     {
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+         'OPTIONS': { #added
+            'min_length': 8,  # you can change this as needed
+        }
     },
     {
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
@@ -141,3 +145,9 @@ STATICFILES_DIRS = [
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+LOGIN_URL = '/accounts/login/'
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/accounts/login/'
+
+

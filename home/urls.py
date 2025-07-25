@@ -14,4 +14,5 @@ urlpatterns = [
 
     # Cart URL (optional)
     path('add-to-cart/<int:product_id>/', views.add_to_cart, name='add_to_cart'),
+     path('signup/', views.signup_view, name='signup'),
 ]

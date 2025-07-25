@@ -4,6 +4,10 @@ from home.models import Contact
 from django.contrib import messages
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Product
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import login
+from django.shortcuts import redirect
+from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
@@ -62,3 +66,22 @@ def add_to_cart(request, product_id):
 
 
 
+def signup_view(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            login(request, user)  # Auto login after signup
+            return redirect('index')  # Change as per your homepage
+    else:
+        form = UserCreationForm()
+    return render(request, 'registration/signup.html', {'form': form})
+
+
+
+
+
+# Replace your existing services view with this:
+@login_required
+def services(request):
+    return render(request, 'services.html')
