@@ -8200,3 +8200,108 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 [2025-07-28 15:28:37,342] INFO: "GET /about/ HTTP/1.1" 200 5132
 [2025-07-28 15:28:40,393] INFO: 🧠 Someone visited the About page!
 [2025-07-28 15:28:40,396] INFO: "GET /about/ HTTP/1.1" 200 5132
+[2025-07-28 15:51:24,241] INFO: Watching for file changes with StatReloader
+[2025-07-28 15:51:25,948] INFO: "GET / HTTP/1.1" 200 7818
+[2025-07-28 15:51:29,451] INFO: "GET /services/ice-cream/ HTTP/1.1" 200 3119
+[2025-07-28 15:51:31,198] INFO: "GET /services/softy/ HTTP/1.1" 200 4333
+[2025-07-28 15:51:58,863] INFO: /Users/dev/Desktop/django/home/views.py changed, reloading.
+[2025-07-28 15:51:59,277] INFO: Watching for file changes with StatReloader
+[2025-07-28 15:52:40,225] INFO: Watching for file changes with StatReloader
+[2025-07-28 15:52:43,990] INFO: "GET / HTTP/1.1" 200 7818
+[2025-07-28 15:52:46,645] INFO: "GET /services/softy/ HTTP/1.1" 200 3111
+[2025-07-28 15:52:50,627] INFO: "GET /services/softy/ HTTP/1.1" 200 3111
+[2025-07-28 15:52:52,063] INFO: "GET /services/ice-cream/ HTTP/1.1" 200 3119
+[2025-07-28 15:52:53,817] INFO: "GET /services/family-pack/ HTTP/1.1" 200 3123
+[2025-07-28 15:52:55,605] INFO: "GET /services/softy/ HTTP/1.1" 200 3111
+[2025-07-28 15:53:01,670] INFO: /Users/dev/Desktop/django/home/views.py changed, reloading.
+[2025-07-28 15:53:02,087] INFO: Watching for file changes with StatReloader
+[2025-07-28 15:53:04,267] INFO: /Users/dev/Desktop/django/home/views.py changed, reloading.
+[2025-07-28 15:53:04,724] INFO: Watching for file changes with StatReloader
+[2025-07-28 15:53:14,997] INFO: /Users/dev/Desktop/django/home/views.py changed, reloading.
+[2025-07-28 15:53:15,408] INFO: Watching for file changes with StatReloader
+[2025-07-28 15:53:30,768] INFO: /Users/dev/Desktop/django/home/views.py changed, reloading.
+[2025-07-28 15:53:31,213] INFO: Watching for file changes with StatReloader
+[2025-07-28 15:55:54,779] INFO: /Users/dev/Desktop/django/home/views.py changed, reloading.
+[2025-07-28 15:55:55,186] INFO: Watching for file changes with StatReloader
+[2025-07-28 15:55:57,258] INFO: "GET / HTTP/1.1" 200 7818
+[2025-07-28 15:56:06,405] ERROR: Internal Server Error: /services/softy/
+Traceback (most recent call last):
+  File "/Users/dev/.local/share/virtualenvs/storefront-zoRs6NtY/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/dev/.local/share/virtualenvs/storefront-zoRs6NtY/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/dev/Desktop/django/home/views.py", line 59, in softy_view
+    paginator = Paginator(product_list, 4)
+                ^^^^^^^^^
+NameError: name 'Paginator' is not defined
+[2025-07-28 15:56:06,407] ERROR: "GET /services/softy/ HTTP/1.1" 500 63125
+[2025-07-28 15:56:28,842] INFO: /Users/dev/Desktop/django/home/views.py changed, reloading.
+[2025-07-28 15:56:29,263] INFO: Watching for file changes with StatReloader
+[2025-07-28 15:56:31,661] INFO: "GET / HTTP/1.1" 200 7818
+[2025-07-28 15:56:36,784] INFO: "GET /services/softy/ HTTP/1.1" 200 4638
+[2025-07-28 15:57:11,360] INFO: "GET /services/softy/ HTTP/1.1" 200 4638
+[2025-07-28 15:57:11,669] INFO: "GET / HTTP/1.1" 200 7818
+[2025-07-28 15:57:12,374] INFO: "GET /admin/ HTTP/1.1" 302 0
+[2025-07-28 15:57:12,408] INFO: "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3702
+[2025-07-28 15:57:12,423] INFO: "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[2025-07-28 15:57:12,434] INFO: "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[2025-07-28 15:57:12,435] INFO: "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[2025-07-28 15:57:12,437] INFO: "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[2025-07-28 15:57:12,438] INFO: "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+[2025-07-28 15:57:12,438] INFO: "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[2025-07-28 15:57:12,438] INFO: "GET /static/admin/css/login.css HTTP/1.1" 304 0
+[2025-07-28 15:57:22,705] INFO: "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2025-07-28 15:57:22,725] INFO: "GET /admin/ HTTP/1.1" 200 8134
+[2025-07-28 15:57:22,733] INFO: "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[2025-07-28 15:57:22,757] INFO: "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[2025-07-28 15:57:22,757] INFO: "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[2025-07-28 15:57:24,742] INFO: "GET /admin/home/product/ HTTP/1.1" 200 10533
+[2025-07-28 15:57:24,750] INFO: "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[2025-07-28 15:57:24,751] INFO: "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[2025-07-28 15:57:24,754] INFO: "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[2025-07-28 15:57:24,755] INFO: "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[2025-07-28 15:57:24,756] INFO: "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[2025-07-28 15:57:24,764] INFO: "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[2025-07-28 15:57:24,765] INFO: "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[2025-07-28 15:57:24,765] INFO: "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[2025-07-28 15:57:24,765] INFO: "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[2025-07-28 15:57:24,765] INFO: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-07-28 15:57:24,766] INFO: "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+[2025-07-28 15:57:24,804] INFO: "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[2025-07-28 15:57:27,389] INFO: "GET /admin/home/product/add/ HTTP/1.1" 200 11325
+[2025-07-28 15:57:27,400] INFO: "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[2025-07-28 15:57:27,401] INFO: "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[2025-07-28 15:57:27,404] INFO: "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[2025-07-28 15:57:27,407] INFO: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-07-28 15:57:27,407] INFO: "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[2025-07-28 15:58:05,209] INFO: "POST /admin/home/product/add/ HTTP/1.1" 302 0
+[2025-07-28 15:58:05,226] INFO: "GET /admin/home/product/ HTTP/1.1" 200 11003
+[2025-07-28 15:58:05,236] INFO: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-07-28 15:58:05,252] INFO: "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[2025-07-28 15:58:08,899] INFO: "GET /admin/home/product/ HTTP/1.1" 200 10801
+[2025-07-28 15:58:08,910] INFO: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-07-28 15:58:10,819] INFO: 🧠 Someone visited the About page!
+[2025-07-28 15:58:10,823] INFO: "GET /about/ HTTP/1.1" 200 5133
+[2025-07-28 15:58:11,360] INFO: "GET / HTTP/1.1" 200 7819
+[2025-07-28 15:58:14,784] INFO: "GET /services/softy/ HTTP/1.1" 200 5053
+[2025-07-28 15:58:14,796] INFO: "GET /media/products/ice3.jpeg HTTP/1.1" 200 3175
+[2025-07-28 15:58:27,184] INFO: "GET /services/softy/ HTTP/1.1" 200 5053
+[2025-07-28 15:58:27,207] INFO: "GET /media/products/ice3.jpeg HTTP/1.1" 304 0
+[2025-07-28 15:58:29,167] INFO: "GET / HTTP/1.1" 200 7819
+[2025-07-28 15:58:29,767] INFO: 🧠 Someone visited the About page!
+[2025-07-28 15:58:29,770] INFO: "GET /about/ HTTP/1.1" 200 5133
+[2025-07-28 15:58:30,225] INFO: "GET /admin/ HTTP/1.1" 200 8482
+[2025-07-28 15:58:33,061] INFO: "GET /admin/home/product/add/ HTTP/1.1" 200 11325
+[2025-07-28 15:58:33,066] INFO: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-07-28 15:59:03,837] INFO: "POST /admin/home/product/add/ HTTP/1.1" 302 0
+[2025-07-28 15:59:03,855] INFO: "GET /admin/home/product/ HTTP/1.1" 200 11259
+[2025-07-28 15:59:03,865] INFO: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-07-28 15:59:09,807] INFO: "GET /admin/home/product/ HTTP/1.1" 200 11061
+[2025-07-28 15:59:09,817] INFO: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[2025-07-28 15:59:11,320] INFO: "GET /admin/ HTTP/1.1" 200 8826
+[2025-07-28 15:59:11,830] INFO: "GET / HTTP/1.1" 200 7819
+[2025-07-28 15:59:14,492] INFO: "GET /services/softy/ HTTP/1.1" 200 5274
+[2025-07-28 15:59:14,500] INFO: "GET /media/products/ice3.jpeg HTTP/1.1" 304 0
+[2025-07-28 15:59:17,485] INFO: "GET /services/softy/?page=2 HTTP/1.1" 200 3995
+[2025-07-28 15:59:17,493] INFO: "GET /media/products/3i.png HTTP/1.1" 200 352801
+[2025-07-28 15:59:18,870] INFO: "GET /services/softy/?page=1 HTTP/1.1" 200 5274

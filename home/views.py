@@ -10,6 +10,7 @@ from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
 from .models import Product
 import logging
+from django.core.paginator import Paginator
 
 logger = logging.getLogger(__name__)
 
@@ -55,8 +56,16 @@ def ice_cream_view(request):
     return render(request, 'services_list.html', {'items': items, 'title': 'Ice Cream'})
 
 def softy_view(request):
-    items = Product.objects.filter(category='softy')
-    return render(request, 'services_list.html', {'items': items, 'title': 'Softy'})
+    product_list = Product.objects.filter(category='softy')
+    paginator = Paginator(product_list, 4)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+
+    return render(request, 'services_list.html', {
+        'page_obj': page_obj,
+        'title': 'Softy'
+    })
+
 
 def family_pack_view(request):
     items = Product.objects.filter(category='family-pack')
