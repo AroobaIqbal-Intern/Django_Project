@@ -8305,3 +8305,33 @@ NameError: name 'Paginator' is not defined
 [2025-07-28 15:59:17,485] INFO: "GET /services/softy/?page=2 HTTP/1.1" 200 3995
 [2025-07-28 15:59:17,493] INFO: "GET /media/products/3i.png HTTP/1.1" 200 352801
 [2025-07-28 15:59:18,870] INFO: "GET /services/softy/?page=1 HTTP/1.1" 200 5274
+[2025-07-28 16:59:44,193] INFO: Watching for file changes with StatReloader
+[2025-07-28 16:59:46,270] INFO: "GET / HTTP/1.1" 200 7819
+[2025-07-28 16:59:48,586] INFO: 🧠 Someone visited the About page!
+[2025-07-28 16:59:48,592] INFO: "GET /about/ HTTP/1.1" 200 5133
+[2025-07-28 16:59:50,535] INFO: "GET /contact HTTP/1.1" 200 5184
+[2025-07-28 16:59:53,246] WARNING: Not Found: /contact/
+[2025-07-28 16:59:53,246] WARNING: "GET /contact/ HTTP/1.1" 404 5923
+[2025-07-28 16:59:57,609] WARNING: Not Found: /contact/api/products
+[2025-07-28 16:59:57,609] WARNING: "GET /contact/api/products HTTP/1.1" 404 5959
+[2025-07-28 17:00:04,021] WARNING: Not Found: /contact/api/product
+[2025-07-28 17:00:04,021] WARNING: "GET /contact/api/product HTTP/1.1" 404 5956
+[2025-07-28 17:00:16,068] WARNING: Not Found: /contact/
+[2025-07-28 17:00:16,069] WARNING: "GET /contact/ HTTP/1.1" 404 5923
+[2025-07-28 17:00:16,562] INFO: "GET / HTTP/1.1" 200 7819
+[2025-07-28 17:00:20,616] WARNING: Not Found: /api/product
+[2025-07-28 17:00:20,616] WARNING: "GET /api/product HTTP/1.1" 404 5932
+[2025-07-28 17:00:24,318] INFO: "GET /api/products HTTP/1.1" 301 0
+[2025-07-28 17:00:24,343] INFO: "GET /api/products/ HTTP/1.1" 200 6397
+[2025-07-28 17:00:24,360] INFO: "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+[2025-07-28 17:00:24,370] INFO: "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+[2025-07-28 17:00:24,370] INFO: "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+[2025-07-28 17:00:24,371] INFO: "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+[2025-07-28 17:00:24,373] INFO: "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+[2025-07-28 17:00:24,375] INFO: "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+[2025-07-28 17:00:24,377] INFO: "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+[2025-07-28 17:00:24,377] INFO: "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[2025-07-28 17:00:24,377] INFO: "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+[2025-07-28 17:00:24,378] INFO: "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+[2025-07-28 17:00:24,378] INFO: "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+[2025-07-28 17:00:24,381] INFO: "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458

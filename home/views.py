@@ -11,6 +11,10 @@ from django.contrib.auth.decorators import login_required
 from .models import Product
 import logging
 from django.core.paginator import Paginator
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+from .serializers import ProductSerializer
+
 
 logger = logging.getLogger(__name__)
 
@@ -140,7 +144,11 @@ def order_placed_view(request):
 
 
 
-
+@api_view(['GET'])
+def product_list(request):
+    products = Product.objects.all()
+    serializer = ProductSerializer(products, many=True)
+    return Response(serializer.data)
 
 
 
