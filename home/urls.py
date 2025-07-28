@@ -5,7 +5,7 @@ urlpatterns = [
     path('', views.index, name='home'),
     path('about/', views.about, name='about'),
     path('services/', views.services, name='services'),
-    path('contact/', views.contact, name='contact'),
+    path('contact', views.contact, name='contact'),
     
     # Services dropdown URLs
     path('services/ice-cream/', views.ice_cream_view, name='ice_cream'),

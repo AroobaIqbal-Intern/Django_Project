@@ -151,3 +151,47 @@ LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/accounts/login/'
 
 
+
+import os
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,  # Keep Django's logs
+    'formatters': {
+        'verbose': {
+            'format': '[{asctime}] {levelname}: {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'testlog.log'),  # Log file in project root
+            'formatter': 'verbose',
+        },
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
+        },
+    },
+    'loggers': {
+        # This allows your app views to log
+        'django': {
+            'handlers': ['console', 'file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        '__main__': {
+            'handlers': ['console', 'file'],
+            'level': 'DEBUG',
+        },
+        # Optional: your app name logger
+        'home': {
+            'handlers': ['console', 'file'],
+            'level': 'DEBUG',
+            'propagate': False,
+        },
+    },
+}

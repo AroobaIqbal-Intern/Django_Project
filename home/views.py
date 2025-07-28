@@ -9,6 +9,9 @@ from django.contrib.auth import login
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
 from .models import Product
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 # Create your views here.
@@ -17,6 +20,7 @@ def index(request):
    # return HttpResponse("This is homepage")
    #context is set of variables(dictionary) that you will send into template
    context={
+      
        #we will fetch the data from databae or fetch date of blof etc here to give it to template
        'variable':"value of my first variable",     #this variable is called in index.html template
        'variable2':"value of my second variable"
@@ -25,6 +29,7 @@ def index(request):
 
 
 def about(request):
+     logger.info("🧠 Someone visited the About page!")  # This is our test log. 
     #return HttpResponse("This is about")
      return render(request,'about.html')
 
