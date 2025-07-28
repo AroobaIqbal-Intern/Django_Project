@@ -8335,3 +8335,124 @@ NameError: name 'Paginator' is not defined
 [2025-07-28 17:00:24,378] INFO: "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
 [2025-07-28 17:00:24,378] INFO: "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
 [2025-07-28 17:00:24,381] INFO: "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+[2025-07-28 18:10:20,123] INFO: Watching for file changes with StatReloader
+[2025-07-28 18:10:40,769] INFO: /Users/dev/Desktop/django/home/urls.py changed, reloading.
+[2025-07-28 18:10:41,155] INFO: Watching for file changes with StatReloader
+[2025-07-28 18:10:57,566] INFO: /Users/dev/Desktop/django/home/urls.py changed, reloading.
+[2025-07-28 18:10:57,925] INFO: Watching for file changes with StatReloader
+[2025-07-28 18:11:20,521] INFO: /Users/dev/Desktop/django/home/views.py changed, reloading.
+[2025-07-28 18:11:20,914] INFO: Watching for file changes with StatReloader
+[2025-07-28 18:11:37,347] INFO: /Users/dev/Desktop/django/home/views.py changed, reloading.
+[2025-07-28 18:11:37,744] INFO: Watching for file changes with StatReloader
+[2025-07-28 18:11:40,227] INFO: "GET / HTTP/1.1" 200 7819
+[2025-07-28 18:11:49,726] INFO: "GET / HTTP/1.1" 200 7819
+[2025-07-28 18:11:50,492] INFO: "GET /api/products/ HTTP/1.1" 200 6397
+[2025-07-28 18:11:50,507] INFO: "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[2025-07-28 18:11:50,517] INFO: "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+[2025-07-28 18:11:50,519] INFO: "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[2025-07-28 18:11:50,520] INFO: "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[2025-07-28 18:11:50,520] INFO: "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[2025-07-28 18:11:50,521] INFO: "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[2025-07-28 18:11:50,521] INFO: "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[2025-07-28 18:11:50,522] INFO: "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[2025-07-28 18:11:50,522] INFO: "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[2025-07-28 18:11:50,523] INFO: "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[2025-07-28 18:11:50,524] INFO: "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+[2025-07-28 18:11:50,552] INFO: "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[2025-07-28 18:11:55,755] INFO: "OPTIONS /api/products/ HTTP/1.1" 200 5556
+[2025-07-28 18:11:57,768] INFO: "OPTIONS /api/products/ HTTP/1.1" 200 5556
+[2025-07-28 18:11:58,285] INFO: "OPTIONS /api/products/ HTTP/1.1" 200 5556
+[2025-07-28 18:11:58,470] INFO: "OPTIONS /api/products/ HTTP/1.1" 200 5556
+[2025-07-28 18:12:01,943] INFO: "GET /api/products/ HTTP/1.1" 200 6397
+[2025-07-28 18:12:02,806] INFO: "GET /api/products/ HTTP/1.1" 200 6397
+[2025-07-28 18:12:03,807] INFO: "OPTIONS /api/products/ HTTP/1.1" 200 5556
+[2025-07-28 18:12:12,321] INFO: "GET /api/products/ HTTP/1.1" 200 6397
+[2025-07-28 18:12:15,397] INFO: "GET /api/products/?format=api HTTP/1.1" 200 6441
+[2025-07-28 18:12:17,199] INFO: "GET /api/products/?format=json HTTP/1.1" 200 505
+[2025-07-28 18:12:24,746] INFO: "OPTIONS /api/products/ HTTP/1.1" 200 5556
+[2025-07-28 18:12:24,756] INFO: "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[2025-07-28 18:12:24,757] INFO: "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[2025-07-28 18:12:24,758] INFO: "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[2025-07-28 18:12:24,759] INFO: "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[2025-07-28 18:12:24,759] INFO: "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[2025-07-28 18:12:24,760] INFO: "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+[2025-07-28 18:12:24,763] INFO: "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[2025-07-28 18:12:24,764] INFO: "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[2025-07-28 18:12:24,764] INFO: "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[2025-07-28 18:12:24,766] INFO: "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[2025-07-28 18:12:24,766] INFO: "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+[2025-07-28 18:12:26,099] INFO: "OPTIONS /api/products/ HTTP/1.1" 200 5556
+[2025-07-28 18:12:28,781] INFO: "GET /api/products/ HTTP/1.1" 200 6397
+[2025-07-28 18:12:28,798] INFO: "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[2025-07-28 18:12:37,708] WARNING: Not Found: /api/products/POST
+[2025-07-28 18:12:37,709] WARNING: "GET /api/products/POST HTTP/1.1" 404 6217
+[2025-07-28 18:12:41,392] INFO: "GET /api/products/ HTTP/1.1" 200 6397
+[2025-07-28 18:12:41,982] INFO: "GET /api/products/ HTTP/1.1" 200 6397
+[2025-07-28 18:13:17,859] INFO: "GET / HTTP/1.1" 200 7819
+[2025-07-28 18:13:22,252] INFO: "GET / HTTP/1.1" 200 7819
+[2025-07-28 18:13:23,452] INFO: 🧠 Someone visited the About page!
+[2025-07-28 18:13:23,456] INFO: "GET /about/ HTTP/1.1" 200 5133
+[2025-07-28 18:13:24,569] INFO: "GET /api/products/ HTTP/1.1" 200 6397
+[2025-07-28 18:13:30,756] INFO: "GET /api/products/ HTTP/1.1" 200 6397
+[2025-07-28 18:13:31,165] INFO: "GET /api/products/ HTTP/1.1" 200 6397
+[2025-07-28 18:13:39,541] INFO: "OPTIONS /api/products/ HTTP/1.1" 200 5556
+[2025-07-28 18:13:43,452] INFO: "GET /api/products/ HTTP/1.1" 200 6397
+[2025-07-28 18:15:48,282] INFO: /Users/dev/Desktop/django/home/views.py changed, reloading.
+[2025-07-28 18:15:48,682] INFO: Watching for file changes with StatReloader
+[2025-07-28 18:16:04,066] INFO: /Users/dev/Desktop/django/home/views.py changed, reloading.
+[2025-07-28 18:16:04,460] INFO: Watching for file changes with StatReloader
+[2025-07-28 18:16:21,996] INFO: /Users/dev/Desktop/django/home/urls.py changed, reloading.
+[2025-07-28 18:16:22,408] INFO: Watching for file changes with StatReloader
+[2025-07-28 18:16:24,546] INFO: "GET / HTTP/1.1" 200 7819
+[2025-07-28 18:16:28,049] INFO: "GET / HTTP/1.1" 200 7819
+[2025-07-28 18:16:29,892] INFO: "GET /api/products/ HTTP/1.1" 200 10980
+[2025-07-28 18:16:32,684] WARNING: Not Found: /api/product
+[2025-07-28 18:16:32,685] WARNING: "GET /api/product HTTP/1.1" 404 5932
+[2025-07-28 18:16:35,843] INFO: "GET /api/products/ HTTP/1.1" 200 10980
+[2025-07-28 18:17:11,922] INFO: "POST /api/products/ HTTP/1.1" 201 9655
+[2025-07-28 18:17:19,300] INFO: "GET /api/products/ HTTP/1.1" 200 11312
+[2025-07-28 18:17:20,819] INFO: "GET / HTTP/1.1" 200 7819
+[2025-07-28 18:17:23,954] INFO: "GET /services/softy/ HTTP/1.1" 200 5274
+[2025-07-28 18:17:23,964] INFO: "GET /media/products/ice3.jpeg HTTP/1.1" 304 0
+[2025-07-28 18:17:27,041] INFO: "GET /services/softy/?page=2 HTTP/1.1" 200 4412
+[2025-07-28 18:17:27,043] INFO: "GET /media/products/3i.png HTTP/1.1" 304 0
+[2025-07-28 18:17:27,052] INFO: "GET /media/products/2i.jpg HTTP/1.1" 200 36038
+[2025-07-28 18:17:40,647] INFO: /Users/dev/Desktop/django/home/urls.py changed, reloading.
+[2025-07-28 18:17:41,101] INFO: Watching for file changes with StatReloader
+[2025-07-28 18:17:45,374] INFO: /Users/dev/Desktop/django/home/views.py changed, reloading.
+[2025-07-28 18:17:45,839] INFO: Watching for file changes with StatReloader
+[2025-07-28 18:17:51,021] INFO: /Users/dev/Desktop/django/home/views.py changed, reloading.
+[2025-07-28 18:17:51,410] INFO: Watching for file changes with StatReloader
+[2025-07-28 18:18:34,465] INFO: /Users/dev/Desktop/django/home/views.py changed, reloading.
+[2025-07-28 18:18:34,855] INFO: Watching for file changes with StatReloader
+[2025-07-28 18:18:36,980] INFO: /Users/dev/Desktop/django/home/views.py changed, reloading.
+[2025-07-28 18:18:37,388] INFO: Watching for file changes with StatReloader
+[2025-07-28 18:18:39,509] INFO: /Users/dev/Desktop/django/home/views.py changed, reloading.
+[2025-07-28 18:18:39,889] INFO: Watching for file changes with StatReloader
+[2025-07-28 18:19:47,397] INFO: /Users/dev/Desktop/django/home/views.py changed, reloading.
+[2025-07-28 18:19:47,819] INFO: Watching for file changes with StatReloader
+[2025-07-28 18:20:25,691] INFO: /Users/dev/Desktop/django/home/urls.py changed, reloading.
+[2025-07-28 18:20:26,094] INFO: Watching for file changes with StatReloader
+[2025-07-28 18:20:30,487] INFO: "GET / HTTP/1.1" 200 7819
+[2025-07-28 18:20:33,711] INFO: 🧠 Someone visited the About page!
+[2025-07-28 18:20:33,716] INFO: "GET /about/ HTTP/1.1" 200 5133
+[2025-07-28 18:20:34,542] INFO: "GET /admin/ HTTP/1.1" 200 8826
+[2025-07-28 18:20:36,026] INFO: 🧠 Someone visited the About page!
+[2025-07-28 18:20:36,030] INFO: "GET /about/ HTTP/1.1" 200 5133
+[2025-07-28 18:20:36,322] INFO: "GET / HTTP/1.1" 200 7819
+[2025-07-28 18:20:38,699] INFO: "GET / HTTP/1.1" 200 7819
+[2025-07-28 18:20:44,150] INFO: 🧠 Someone visited the About page!
+[2025-07-28 18:20:44,153] INFO: "GET /about/ HTTP/1.1" 200 5133
+[2025-07-28 18:20:44,422] INFO: "GET /api/products/ HTTP/1.1" 200 11312
+[2025-07-28 18:20:44,437] INFO: "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[2025-07-28 18:20:44,446] INFO: "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[2025-07-28 18:20:44,447] INFO: "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[2025-07-28 18:20:44,448] INFO: "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[2025-07-28 18:20:44,449] INFO: "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[2025-07-28 18:20:44,450] INFO: "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[2025-07-28 18:20:44,451] INFO: "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[2025-07-28 18:20:44,452] INFO: "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+[2025-07-28 18:20:44,453] INFO: "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+[2025-07-28 18:20:44,453] INFO: "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[2025-07-28 18:20:44,453] INFO: "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[2025-07-28 18:20:44,475] INFO: "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0

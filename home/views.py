@@ -16,6 +16,7 @@ from rest_framework.response import Response
 from .serializers import ProductSerializer
 
 
+
 logger = logging.getLogger(__name__)
 
 
@@ -144,11 +145,18 @@ def order_placed_view(request):
 
 
 
-@api_view(['GET'])
-def product_list(request):
-    products = Product.objects.all()
-    serializer = ProductSerializer(products, many=True)
-    return Response(serializer.data)
+
+
+from .serializers import ProductSerializer
+from rest_framework import generics
+
+class ProductListCreateView(generics.ListCreateAPIView):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+
+
+
+
 
 
 
