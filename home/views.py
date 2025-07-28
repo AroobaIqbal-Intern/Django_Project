@@ -121,3 +121,16 @@ def checkout_view(request):
 
 def order_placed_view(request):
     return render(request, 'order_placed.html')
+
+
+
+
+
+
+
+
+
+
+
+
+
